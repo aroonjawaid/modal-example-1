@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.login-button {
+  background-color: #00af40;
+  color: white;
+  font-size: 1.5rem;
+  border: 1.5px solid #009135;
+  border-radius: 0.313rem;
+  font-weight: 600;
+  padding: 12px 22px 12px 22px;
+}
+
+.login-button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 343px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-text-container {
+  margin: 1.563rem;
+}
+
+.modal-text {
+  margin-bottom: 1.563rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.modal-text p + p {
+  margin-top: 1.5rem;
+}
+
+.modal-title {
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+
+.email {
+  color: #002bff;
+  text-decoration: underline;
+}
+
+.modal-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+}
+
+.modal-button {
+  padding: 0.938rem 1.563rem;
+  background-color: #002bff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.313rem;
+}
+
+/* Media Query for screens with a min width of 768px */
+@media (min-width: 768px) {
+  .modal-content {
+    width: 100%;
+    max-width: 500px;
+  }
+}
